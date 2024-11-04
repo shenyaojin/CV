@@ -1,0 +1,241 @@
+%!TEX program = pdflatex
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,13pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks,linkcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Shenyao Jin} \\ \vspace{1pt}
+    \small \underline{shenyaojin@mines.edu}  $|$
+    {(310)256-7875}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Zhejiang University}{Hangzhou, China}
+      {Bachelor of Geological Science}{September 2019 \textasciitilde August 2023}
+          \resumeItemListStart
+            \resumeItem{QS ranking 42 in 2023}
+            \resumeItem{\textbf{Overall} GPA: 3.86/4; \textbf{Major} GPA: 3.92/4}
+            \resumeItem{Graduated from Chu Kochen Honors College}
+        \resumeItemListEnd
+
+	\resumeSubheading
+		{Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, United States}
+		{Visiting Student}{July 2022 \textasciitilde September 2022}
+			\resumeItemListStart
+			\resumeItem{Process the DAS data of Lake Hattie. Extract fish activities and perform velocity scanning based on the data.}
+			\resumeItem{Advisor: Ge Jin.}
+			\resumeItemListEnd
+
+  \resumeSubheading
+  {Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, United States}
+  {PhD Student of geophysics (2nd year)}{August 2023 \textasciitilde Present}
+      \resumeItemListStart
+      \resumeItem{Advisor: Ge Jin.}
+      \resumeItem{\textbf{Overall} GPA: 4.0/4.0}
+      \resumeItem{Focus on the hydraulic fracturing result analysis and evalution based on DFOS system}
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{Bakken N. Dakota Distributed Fiber Optic Sensing (Project Mariner) - ExxonMobil} }{August 2023 \textasciitilde Present}
+    \resumeItemListStart
+      \resumeItem{Using an extensive range of DFOS and engineering data from Bakken Mariner pilot project to characterize the conductive hydraulic fractures' behaviors during both the stimulation and production phases.}
+      \resumeItem{Advisor: Ge Jin}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {\textbf{Clustering Joint Inversion of Subsurface Geological Targets} $|$ \emph{C++}}{January 2023 \textasciitilde May 2023}
+    \resumeItemListStart
+      \resumeItem{Implementation of Kernelized FCM(\textbf{F}uzzy \textbf{C}-\textbf{M}eans) Clustering algorithm and apply joint inversion to field data from Liangzhu, an ancient Chinese city.} 
+      \resumeItem{Advisor: Zhanjie Shi}
+    \resumeItemListEnd
+
+    \resumeProjectHeading{\textbf{Imaging from Ambient Noise of DAS data of Lake Hattie} $|$ \emph{python}}{July 2022 \textasciitilde September 2022}
+    \resumeItemListStart
+    \resumeItem{Get underground structure of Lake Hattie, and analyze the activities of Lake Hattie.}
+    \resumeItem{Advisor: Ge Jin}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Effective Elastic Thickness Analysis of North China Craton(NCC)} $|$ \emph{MATLAB}}{April 2021 \textasciitilde May 2022}
+        \resumeItemListStart
+          \resumeItem{Derived empirical formula for Effective Elastic Thickness from various physical property data, identifying key controlling factors for the North China Craton.} 
+          \resumeItem{Advisor: Yixian Xu}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------Skills-----------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Programming}{: Python, MATLAB, C++, Linux Shell Script, \LaTeX}
+    }
+    \item{
+      \textbf{Geophysical Skills}{: Seismic data/fiber optic data processing \& analysis and interpretation, Seismic inversion, Machine learning in geophysics.}
+    }
+  \resumeSubHeadingListEnd
+
+ \section{Public Presentation}
+ \resumeSubHeadingListStart
+ \resumeProjectHeading
+   {\textbf{Conductive Fracture Monitoring Using DSS: from Stimulation to Production}}{August 2024}
+   \resumeItemListStart
+   	\resumeItem{It is presented in IMAGE'24.}
+   	\resumeItem{It explains the technique combining multiple datasets on explaining the behavior of hydraulic fractures during the whole operation including stimulation and production period.}
+   \resumeItemListEnd
+ \resumeSubHeadingListEnd
+
+\section{Awards}
+ \resumeSubHeadingListStart
+
+ \resumeProjectHeading
+{\textbf{Meritorious Winner in Mathematical Contest in Modeling(MCM)}}{Feb 2022}
+\resumeItemListStart
+	\resumeItem{Awarded for the top 8\% teams of undergraduates use mathematical modeling to solve real-world problems. Contributed as the programmer and data analysist of the team.}
+\resumeItemListEnd
+
+	\resumeProjectHeading
+{\textbf{First Year Fellowship for graduate students}}{March 2024}
+\resumeItemListStart
+	\resumeItem{Awarded for ability to integrate geophysics with computational techniques to advance sustainable resource management.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
+
+%-------------------------------------------
+% Not available now: 
+%
+%-----------TECHNICAL SKILLS-----------
+%\section{Technical Skills}
+%\begin{itemize}[leftmargin=0.15in, label={}]
+%	\small{\item{
+%			\textbf{Programming Languages}{: Skilled in Linux Shell Script, C/C++, Python, MATLAB/Octave, Mathematica,\LaTeX, Markdown, Git} \\
+%			\textbf{Communication}{: English, Chinese} \\
+%			\textbf{Operating System}{: Linux(including Debian, RHEL and \textbf{Arch})} \\
+%			\textbf{Mathematic and physical skills}{: Numerical analysis,  Mathematical modeling, Statistics and Probabilities, Signal processing}
+%	}} \\
+%	\textbf{Geophysical skills}{: Seismic Data Processing(Using \href{https://github.com/JohnWStockwellJr/SeisUnix}{Seismic Unix} or \textbf{Obspy}), Magnetotellurics Data Processing(Using \href{https://ds.iris.edu/ds/products/emtf/}{EMTF}),
+%		DAS(\textbf{D}istributed \textbf{A}coustic \textbf{S}ensing) data processing(Using Python)}
+%\end{itemize}
+% \section{Publish}
+% \resumeSubHeadingListStart
+% \resumeProjectHeading
+%   {\textbf{Not available... now}}{}
+% \resumeSubHeadingListEnd
