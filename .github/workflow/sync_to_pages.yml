@@ -1,0 +1,33 @@
+name: Sync resume to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'resume.pdf'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CV repo
+        uses: actions/checkout@v3
+
+      - name: Clone GitHub Pages repo
+        run: |
+          git config --global user.email "shenyaojin@users.noreply.github.com"
+          git config --global user.name "ShenyaoBot"
+          git clone https://x-access-token:${{ secrets.PAGES_DEPLOY_TOKEN }}@github.com/shenyaojin/shenyaojin.github.io.git site
+
+      - name: Copy resume to Pages repo
+        run: |
+          mkdir -p site/public/files
+          cp resume.pdf site/public/files/resume.pdf
+
+      - name: Commit and push
+        run: |
+          cd site
+          git add public/files/resume.pdf
+          git commit -m "Auto-sync resume from CV repo" || echo "No changes"
+          git push
