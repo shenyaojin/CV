@@ -1,10 +1,4 @@
 %!TEX program = pdflatex
-%-------------------------
-% Resume in Latex
-% Author : Sidratul Muntaha Ahmed
-% License : MIT
-%------------------------
-
 \documentclass[letterpaper,13pt]{article}
 
 \usepackage{latexsym}
@@ -20,26 +14,13 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
+% Margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -47,27 +28,19 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% Section formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
-
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -75,165 +48,140 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
+%---------- RESUME START ----------
 \begin{document}
 
-%----------HEADING----------
-
-
 \begin{center}
-    \textbf{\Huge \scshape Shenyao Jin} \\ \vspace{1pt}
-    \small \underline{shenyaojin@mines.edu}  $|$
-    {(310)256-7875}
+    {\Huge \scshape Shenyao Jin} \\ \vspace{1pt}
+    \small \underline{shenyaojin@mines.edu} $|$ {(310) 256-7875} \\
+    \normalsize \textit{PhD student in geophysics focused on fiber-optic sensing and seismo-acoustic modeling}
 \end{center}
 
-
-%-----------EDUCATION-----------
+%----------- EDUCATION -----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Zhejiang University}{Hangzhou, China}
-      {Bachelor of Geological Science}{September 2019 \textasciitilde August 2023}
-          \resumeItemListStart
-            \resumeItem{\textbf{Overall} GPA: 3.86/4; \textbf{Major} GPA: 3.92/4}
-        \resumeItemListEnd
+\resumeSubHeadingListStart
 
-	\resumeSubheading
-		{Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, United States}
-		{Visiting Student}{July 2022 \textasciitilde September 2022}
-			\resumeItemListStart
-			\resumeItem{Process the DAS data of Lake Hattie. Extract fish activities and perform velocity scanning based on the data.}
-			\resumeItem{Advisor: Ge Jin.}
-			\resumeItemListEnd
-
-  \resumeSubheading
-  {Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, United States}
-  {PhD Student of geophysics (2nd year)}{August 2023 \textasciitilde Present}
-      \resumeItemListStart
-      \resumeItem{Advisor: Ge Jin.}
-      \resumeItem{\textbf{Overall} GPA: 4.0/4.0}
-      \resumeItem{Focus on the hydraulic fracturing result analysis and evalution based on DFOS system}
-      \resumeItemListEnd
-
-
-  \resumeSubHeadingListEnd
-  
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {\textbf{Bakken N. Dakota Distributed Fiber Optic Sensing (Project Mariner) - ExxonMobil} }{August 2023 \textasciitilde Present}
-    \resumeItemListStart
-      \resumeItem{Using an extensive range of DFOS and engineering data from Bakken Mariner pilot project to characterize the conductive hydraulic fractures' behaviors during both the stimulation and production phases.}
-      \resumeItem{Advisor: Ge Jin}
-    \resumeItemListEnd
-
-    \resumeProjectHeading
-    {\textbf{Clustering Joint Inversion of Subsurface Geological Targets} $|$ \emph{C++}}{January 2023 \textasciitilde May 2023}
-    \resumeItemListStart
-      \resumeItem{Implementation of Kernelized FCM(\textbf{F}uzzy \textbf{C}-\textbf{M}eans) Clustering algorithm and apply joint inversion to field data from Liangzhu, an ancient Chinese city.} 
-      \resumeItem{Advisor: Zhanjie Shi}
-    \resumeItemListEnd
-
-    \resumeProjectHeading{\textbf{Imaging from Ambient Noise of DAS data of Lake Hattie} $|$ \emph{python}}{July 2022 \textasciitilde September 2022}
-    \resumeItemListStart
-    \resumeItem{Get underground structure of Lake Hattie, and analyze the activities of Lake Hattie.}
+\resumeSubheading
+  {Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, CO, USA}
+  {PhD Student in Geophysics (2nd Year)}{Aug 2023 -- Present}
+  \resumeItemListStart
     \resumeItem{Advisor: Ge Jin}
-    \resumeItemListEnd
-    
-    \resumeSubHeadingListEnd
+    \resumeItem{GPA: 4.0/4.0}
+    \resumeItem{Focus: Distributed fiber-optic sensing (DFOS) and pressure-strain modeling in hydraulic fracturing analysis.}
+  \resumeItemListEnd
 
-%-----------Skills-----------
-\section{Skills}
-  \resumeSubHeadingListStart
-    \item{
-      \textbf{Programming}{: Python, MATLAB, C/C++, Linux Shell Script, \LaTeX}
-    }
-    \item{
-      \textbf{Geophysical Skills}{: Seismic data/fiber optic data processing \& analysis and interpretation, Seismic inversion, Machine learning in geophysics.}
-    }
-  \resumeSubHeadingListEnd
+\resumeSubheading
+  {Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, CO, USA}
+  {Visiting Student}{Jul 2022 -- Sept 2022}
+  \resumeItemListStart
+    \resumeItem{Processed DAS data from Lake Hattie to extract fish activity signals and perform velocity scanning.}
+    \resumeItem{Advisor: Ge Jin}
+  \resumeItemListEnd
 
- \section{Public Presentation}
- \resumeSubHeadingListStart
- \resumeProjectHeading
-   {\textbf{Conductive Fracture Monitoring Using DSS: from Stimulation to Production}}{August 2024}
-   \resumeItemListStart
-   	\resumeItem{It is presented in IMAGE'24.}
-   	\resumeItem{It explains the technique combining multiple datasets on explaining the behavior of hydraulic fractures during the whole operation including stimulation and production period.}
-   \resumeItemListEnd
- \resumeSubHeadingListEnd
+\resumeSubheading
+  {Zhejiang University}{Hangzhou, China}
+  {Bachelor of Geological Science}{Sept 2019 -- Aug 2023}
+  \resumeItemListStart
+    \resumeItem{\textbf{Overall GPA:} 3.86/4; \textbf{Major GPA:} 3.92/4}
+  \resumeItemListEnd
 
-\section{Awards}
- \resumeSubHeadingListStart
+\resumeSubHeadingListEnd
 
- \resumeProjectHeading
-{\textbf{Meritorious Winner in Mathematical Contest in Modeling(MCM)}}{February 2022}
+%----------- PROJECTS -----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Distributed Fiber-Optic Sensing in the Bakken (Project Mariner, ExxonMobil)}}{Aug 2023 -- Present}
 \resumeItemListStart
-	\resumeItem{Awarded for the top 8\% teams of undergraduates use mathematical modeling to solve real-world problems. Contributed as the programmer and data analysist of the team.}
-\resumeItemListEnd
-
-	\resumeProjectHeading
-{\textbf{First Year Fellowship for graduate students}}{March 2024}
-\resumeItemListStart
-	\resumeItem{Awarded for ability to integrate geophysics with computational techniques to advance sustainable resource management. }
+  \resumeItem{Characterized conductive hydraulic fractures using DFOS strain rate data and pressure gauges during both stimulation and production.}
+  \resumeItem{Integrated low-frequency DAS interpretation with pressure gradient analysis and fracture network modeling.}
+  \resumeItem{Advisor: Ge Jin}
 \resumeItemListEnd
 
 \resumeProjectHeading
-{\textbf{George R. Pickett Memorial Scholarship}}{October 2024}
+  {\textbf{Clustering Joint Inversion of Subsurface Targets} $|$ \emph{C++}}{Jan 2023 -- May 2023}
 \resumeItemListStart
-	\resumeItem{Awarded for demonstrated interest and accomplishment in borehole geophysics with practical applications in the oil and gas industry.}
+  \resumeItem{Implemented kernelized Fuzzy C-Means algorithm for clustering joint inversion of geophysical datasets from Liangzhu archaeological site.}
+  \resumeItem{Advisor: Zhanjie Shi}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{Ambient Noise Imaging of DAS Data from Lake Hattie} $|$ \emph{Python}}{Jul 2022 -- Sept 2022}
+\resumeItemListStart
+  \resumeItem{Used ambient DAS data to obtain subsurface imaging of Lake Hattie and assess environmental dynamics.}
+  \resumeItem{Advisor: Ge Jin}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-%-------------------------------------------
-\end{document}
 
-%-------------------------------------------
-% Not available now: 
-%
-%-----------TECHNICAL SKILLS-----------
-%\section{Technical Skills}
-%\begin{itemize}[leftmargin=0.15in, label={}]
-%	\small{\item{
-%			\textbf{Programming Languages}{: Skilled in Linux Shell Script, C/C++, Python, MATLAB/Octave, Mathematica,\LaTeX, Markdown, Git} \\
-%			\textbf{Communication}{: English, Chinese} \\
-%			\textbf{Operating System}{: Linux(including Debian, RHEL and \textbf{Arch})} \\
-%			\textbf{Mathematic and physical skills}{: Numerical analysis,  Mathematical modeling, Statistics and Probabilities, Signal processing}
-%	}} \\
-%	\textbf{Geophysical skills}{: Seismic Data Processing(Using \href{https://github.com/JohnWStockwellJr/SeisUnix}{Seismic Unix} or \textbf{Obspy}), Magnetotellurics Data Processing(Using \href{https://ds.iris.edu/ds/products/emtf/}{EMTF}),
-%		DAS(\textbf{D}istributed \textbf{A}coustic \textbf{S}ensing) data processing(Using Python)}
-%\end{itemize}
-% \section{Publish}
-% \resumeSubHeadingListStart
-% \resumeProjectHeading
-%   {\textbf{Not available... now}}{}
-% \resumeSubHeadingListEnd
+%----------- SKILLS -----------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{
+  \textbf{Programming:} Python, MATLAB, C/C++, \LaTeX, Bash
+}
+\item{
+  \textbf{Geophysical Methods:} DFOS/DAS data processing and modeling, strain-pressure analysis, hydraulic fracture interpretation, signal denoising
+}
+\item{
+  \textbf{Technical Competencies:} Time-series signal processing, exploratory data analysis, seismic inversion, numerical modeling, Linux workflows
+}
+\resumeSubHeadingListEnd
+
+%----------- PUBLIC PRESENTATION -----------
+\section{Public Presentations}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{Conductive Fracture Monitoring Using DAS: From Stimulation to Production}}{Aug 2024}
+\resumeItemListStart
+  \resumeItem{Presented at IMAGE'24. Demonstrated the use of LF-DAS and pressure data to track fracture connectivity and annular strain evolution in horizontal wells.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- MANUSCRIPTS -----------
+\section{Manuscripts in Preparation}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+  {\textbf{Low-Frequency DAS for Cement Quality Monitoring in Horizontal Wells}}{In preparation, April 2025}
+\resumeItemListStart
+  \resumeItem{First-author manuscript to be submitted to \textit{SPE Journal}. Proposes a method for monitoring cement integrity using low-frequency DAS and pressure–strain coupling. Validated through history matching and field data.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- AWARDS -----------
+\section{Awards}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+  {\textbf{Meritorious Winner, Mathematical Contest in Modeling (MCM)}}{Feb 2022}
+\resumeItemListStart
+  \resumeItem{Top 8\% of international undergraduate teams. Contributed as lead programmer and data analyst.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{First-Year Fellowship for Graduate Students}}{Mar 2024}
+\resumeItemListStart
+  \resumeItem{Recognized for integrating computational geophysics to advance sustainable energy systems.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+  {\textbf{George R. Pickett Memorial Scholarship}}{Oct 2024}
+\resumeItemListStart
+  \resumeItem{Awarded for excellence in borehole geophysics with applied focus on oil and gas workflows.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}
