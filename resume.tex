@@ -54,7 +54,7 @@
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[label={\small$\bullet$}]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -64,8 +64,7 @@
 
 \begin{center}
     {\Huge \scshape Shenyao Jin} \\ \vspace{1pt}
-    \small \underline{shenyaojin@mines.edu} $|$ {(310) 256-7875} \\
-    \normalsize \textit{PhD student in geophysics focused on fiber-optic sensing and seismo-acoustic modeling}
+    \small \underline{shenyaojin@mines.edu} $|$ {+1\ (310) 256-7875} $|$ \href{https://www.linkedin.com/in/shenyao-jin/}{\underline{linkedin.com/in/shenyao-jin}} \\
 \end{center}
 
 %----------- EDUCATION -----------
@@ -73,95 +72,105 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-  {Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, CO, USA}
-  {PhD Student in Geophysics (2nd Year)}{Aug 2023 -- Present}
+  {Colorado School of Mines, Reservoir Characterization Project}{Golden, Colorado}
+  {\textbf{Ph.D. Geophysics}}{Aug 2023 -- May 2027}
   \resumeItemListStart
-    \resumeItem{Advisor: Ge Jin}
-    \resumeItem{GPA: 3.97/4.0}
-    \resumeItem{Focus: Distributed fiber-optic sensing (DFOS) and pressure-strain modeling in hydraulic fracturing analysis.}
-  \resumeItemListEnd
-
-\resumeSubheading
-  {Colorado School of Mines, Reservoir Characterization Project (RCP)}{Golden, CO, USA}
-  {Visiting Student}{Jul 2022 -- Sept 2022}
-  \resumeItemListStart
-    \resumeItem{Processed DAS data from Lake Hattie to extract fish activity signals and perform velocity scanning.}
-    \resumeItem{Advisor: Ge Jin}
+    \resumeItem{Advisor: Dr. Ge Jin, Committee Chair: Dr. Hossein Kazemi}
+    \resumeItem{\textbf{Focus}: \textit{Distributed fiber-optic sensing (DFOS), reservoir stimulation, hydraulic fracture characterization, seismic inversion}}
+    \resumeItem{\textbf{Minor:} \textit{Computer Science}}
   \resumeItemListEnd
 
 \resumeSubheading
   {Zhejiang University}{Hangzhou, China}
-  {Bachelor of Geological Science}{Sept 2019 -- Aug 2023}
+  {\textbf{B.S. Geoscience}}{Sept 2019 -- Aug 2023}
   \resumeItemListStart
-    \resumeItem{\textbf{Overall GPA:} 3.86/4; \textbf{Major GPA:} 3.92/4}
+    \resumeItem{\textbf{Thesis}: ``Clustering-Based Joint Inversion for Imaging Shallow Subsurface Geological Targets''}
+    \resumeItem{Thesis Advisor: Dr. Zhanjie Shi}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%----------- PROJECTS -----------
-\section{Projects}
-\resumeSubHeadingListStart
-
-\resumeProjectHeading
-  {\textbf{Distributed Fiber-Optic Sensing in the Bakken (Project Mariner, ExxonMobil)}}{Aug 2023 -- Present}
-\resumeItemListStart
-  \resumeItem{Characterized conductive hydraulic fractures using DFOS strain rate data and pressure gauges during both stimulation and production.}
-  \resumeItem{Integrated low-frequency DAS interpretation with pressure gradient analysis and fracture network modeling.}
-  \resumeItem{Advisor: Ge Jin}
-\resumeItemListEnd
-
-\resumeProjectHeading
-  {\textbf{Clustering Joint Inversion of Subsurface Targets} $|$ \emph{C++}}{Jan 2023 -- May 2023}
-\resumeItemListStart
-  \resumeItem{Implemented kernelized Fuzzy C-Means algorithm for clustering joint inversion of geophysical datasets from Liangzhu archaeological site.}
-  \resumeItem{Advisor: Zhanjie Shi}
-\resumeItemListEnd
-
-\resumeProjectHeading
-  {\textbf{Ambient Noise Imaging of DAS Data from Lake Hattie} $|$ \emph{Python}}{Jul 2022 -- Sept 2022}
-\resumeItemListStart
-  \resumeItem{Used ambient DAS data to obtain subsurface imaging of Lake Hattie and assess environmental dynamics.}
-  \resumeItem{Advisor: Ge Jin}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
 %----------- SKILLS -----------
-\section{Skills}
-\resumeSubHeadingListStart
-\item{
+\section{Technical Skills}
+\resumeItemListStart
+\resumeItem{
   \textbf{Programming:} Python, MATLAB, C/C++, \LaTeX, Bash
 }
-\item{
+\resumeItem{
+  \textbf{Software and Packages}: Seismic Un*x, MOOSE (Multiphysics Object-Oriented Simulation Environment), DASCore (Python Package for Distributed Acoustic Sensing), Devito
+}
+\resumeItem{
   \textbf{Geophysical Methods:} DFOS/DAS data processing and modeling, strain-pressure analysis, hydraulic fracture interpretation, signal denoising
 }
-\item{
-  \textbf{Technical Competencies:} Time-series signal processing, exploratory data analysis, seismic inversion, numerical modeling, Linux workflows
-}
-\resumeSubHeadingListEnd
-
-%----------- PUBLIC PRESENTATION -----------
-\section{Public Presentations}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-  {\textbf{Conductive Fracture Monitoring Using DAS: From Stimulation to Production}}{Aug 2024}
-\resumeItemListStart
-  \resumeItem{Presented at IMAGE'24. Demonstrated the use of LF-DAS and pressure data to track fracture connectivity and annular strain evolution in horizontal wells.}
+\resumeItem{\textbf{Software Development:} Author of \href{https://github.com/shenyaojin/fibeRIS}{fibeRIS}, an open-source Python package for history matching and interpretation of DAS data (github.com/shenyaojin/fibeRIS).}
 \resumeItemListEnd
-\resumeSubHeadingListEnd
 
-%----------- MANUSCRIPTS -----------
-\section{Manuscripts in Preparation}
+%----------- Experience  -----------
+\section{Experience}
 \resumeSubHeadingListStart
-\resumeProjectHeading
-  {\textbf{Low-Frequency DAS for Cement Quality Monitoring in Horizontal Wells}}{In preparation, April 2025}
-\resumeItemListStart
-  \resumeItem{First-author manuscript to be submitted to \textit{SPE Journal}. Proposes a method for monitoring cement integrity using low-frequency DAS and pressure–strain coupling. Validated through history matching and field data.}
-\resumeItemListEnd
+\resumeSubheading
+  {Graduate Research Assistant}{Golden, Colorado}
+  {Reservoir Characterization Project, Colorado School of Mines}{Aug 2023 -- Present}
+  \resumeItemListStart
+    \resumeItem{\textbf{Project Mariner, ExxonMobil}}
+      \resumeItemListStart
+        \resumeItem{Developed a low-frequency DAS (LF-DAS) data processing workflow to monitor cement quality in horizontal wells.}
+        \resumeItem{Implemented a coupled pressure-strain numerical model using MOOSE to simulate LF-DAS responses under various cementing conditions.}
+        \resumeItem{Conducted history matching of field LF-DAS data, demonstrating the method's effectiveness in identifying cement channeling.}
+      \resumeItemListEnd
+
+      \resumeItem{\textbf{EGS Data Interpretation, Fervo Energy}}
+      \resumeItemListStart
+        \resumeItem{Collaborating with Rice University and Fervo Energy to interpret multiple types of geophysical data (e.g., DAS, sonic logs).}
+        \resumeItem{Developing a novel interpretation tool for LF-DAS data to analyze pressure-strain coupling for fracture characterization.}
+      \resumeItemListEnd
+
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Graduate Research Intern}{Idaho Springs, Colorado}
+  {Reservoir Characterization Project, Colorado School of Mines}{May 2025 -- Aug 2025}
+  \resumeItemListStart
+    \resumeItem{Conducted a DOE project on monitoring high-voltage induced rock fracture using LF-DAS.}
+    \resumeItem{Designed and successfully deployed a novel U-shaped DAS fiber optic cable in two monitoring wells, while also installing separate DTS and DSS fibers for both wells.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Undergraduate Research Intern}{Golden, Colorado}
+  {Reservoir Characterization Project, Colorado School of Mines}{July 2022 -- September 2022}
+  \resumeItemListStart
+    \resumeItem{Contributed to the development of data processing workflows for LF-DAS data collected in Lake Hattie, Wyoming.}
+    \resumeItem{Implemented a velocity scanning algorithm for improved data interpretation.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Undergraduate Research Assistant}{Hangzhou, China}
+  {School of Geosciences, Zhejiang University}{Sept 2021 -- June 2023}
+  \resumeItemListStart
+    \resumeItem{Conducted research on joint inversion methods for seismic and electromagnetic data.}
+    \resumeItem{Developed a joint inversion algorithm in \textit{C++} and validated it against well log data using field datasets.}
+  \resumeItemListEnd
 \resumeSubHeadingListEnd
 
-%----------- AWARDS -----------
-\section{Awards}
+%----------- Abstracts and Presentations -----------
+\section{Abstracts and Presentations}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Shenyao J.}, Ge J. \textit{Low-Frequency DAS for Cement Quality Monitoring in Horizontal Wells}, SEG-AAPG IMAGE 2025, Houston, Texas. Oral Presentation.}
+  \resumeItem{\textbf{Shenyao J.}, Ge J. \textit{Utilizing LFDAS for Cement Quality Monitoring}, Reservoir Characterization Project Sponsor Meeting 2025, Golden, Colorado. Oral Presentation.}
+  \resumeItem{\textbf{Shenyao J.}, Ge J. \textit{Conductive Fracture Monitoring Using Distributed Strain Sensing: From Stimulation to Production}, SEG-AAPG IMAGE 2024, Houston, Texas. Poster Presentation.}
+\resumeSubHeadingListEnd
+
+
+
+%----------- PUBLICATIONS -----------
+\section{Publications}
+\resumeSubHeadingListStart
+  \resumeItem{\textbf{Jin, S.}, and Ge, J. (2025). Low-Frequency DAS for Cement Quality Monitoring in Horizontal Wells. \textit{SPE Journal} (in preparation, submission target Q4 2025); abstract submitted to URTeC 2026.}
+\resumeSubHeadingListEnd
+
+
+%----------- HONORS AND AWARDS -----------
+\section{Honors and Awards}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
@@ -173,7 +182,7 @@
 \resumeProjectHeading
   {\textbf{First-Year Fellowship for Graduate Students}}{Mar 2024}
 \resumeItemListStart
-  \resumeItem{Recognized for integrating computational geophysics to advance sustainable energy systems.}
+  \resumeItem{Awarded by the Colorado School of Mines to recognize incoming students for integrating computational geophysics to advance sustainable energy systems.}
 \resumeItemListEnd
 
 \resumeProjectHeading
@@ -183,5 +192,12 @@
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+
+
+\end{document}as workflows.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
 
 \end{document}
