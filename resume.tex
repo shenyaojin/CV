@@ -78,7 +78,7 @@
   {\textbf{Ph.D. Geophysics}}{Aug 2023 -- May 2027}
   \resumeItemListStart
     \resumeItem{Advisor: Dr. Ge Jin, Committee Chair: Dr. Hossein Kazemi}
-    \resumeItem{\textbf{Focus}: \textit{Distributed fiber-optic sensing (DFOS), reservoir simulation, hydraulic fracture characterization, inversion problems}}
+    \resumeItem{\textbf{Focus}: \textit{Seismic inverse problems, distributed fiber-optic sensing (DFOS), inversion algorithms, numerical modeling, and optimization for subsurface characterization}}
     \resumeItem{\textbf{Minor:} \textit{Computer Science}}
   \resumeItemListEnd
 
@@ -96,16 +96,22 @@
 \section{Technical Skills}
 \resumeItemListStart
 \resumeItem{
-  \textbf{Programming:} Python, MATLAB, C/C++, \LaTeX, Bash
+  \textbf{Programming:} Python, MATLAB, C/C++, \LaTeX, Bash; proficient in Linux/Unix environments
 }
 \resumeItem{
-  \textbf{Software and Packages}: Seismic Un*x, MOOSE (Multiphysics Object-Oriented Simulation Environment), DASCore (Python Package for Distributed Acoustic Sensing), Devito
+  \textbf{Software and Packages}: Seismic Un*x, MOOSE (Multiphysics Object-Oriented Simulation Environment), DASCore (Distributed Acoustic Sensing data processing), Devito (seismic wave propagation modeling), Scikit-learn, TensorFlow
 }
 \resumeItem{
-  \textbf{Geophysical Methods:} DFOS/DAS data processing and modeling, strain-pressure analysis, hydraulic fracture interpretation, signal denoising
+  \textbf{Inverse Problems \& Optimization}: Gauss-Newton iteration, gradient-based optimization, regularization techniques, Tikhonov inversion, history matching, parameter estimation
 }
 \resumeItem{
-  \textbf{Related Coursework:} Inversion Theory, Advanced Machine Learning, Reservoir Simulation, Advanced Geophysical Computing, Advanced Data Science
+  \textbf{Geophysical Methods:} Seismic imaging and inversion, DFOS/DAS data processing and modeling, strain-pressure analysis, hydraulic fracture interpretation, forward modeling, signal denoising, numerical wave propagation
+}
+\resumeItem{
+  \textbf{Machine Learning \& AI}: Supervised learning for geophysical inversion, neural network surrogate models, machine learning-enhanced data interpretation
+}
+\resumeItem{
+  \textbf{Related Coursework:} Inversion Theory, Advanced Machine Learning, Reservoir Simulation, Advanced Geophysical Computing, Advanced Data Science, Numerical Methods
 }
 \resumeItem{\textbf{Software Development:} Author of \href{https://github.com/shenyaojin/fibeRIS}{fibeRIS}, an open-source Python package for history matching and interpretation of DAS data (github.com/shenyaojin/fibeRIS).}
 \resumeItemListEnd
@@ -117,43 +123,51 @@
   {Graduate Research Assistant}{Golden, Colorado}
   {Reservoir Characterization Project, Colorado School of Mines}{Aug 2023 -- Present}
   \resumeItemListStart
-    \resumeItem{\textbf{Project Mariner, ExxonMobil}}
+    \resumeItem{\textbf{Cement Quality Monitoring using Low-Frequency DAS (ExxonMobil Project Mariner)}}
       \resumeItemListStart
-        \resumeItem{Developed a low-frequency DAS (LF-DAS) data processing workflow to monitor cement quality in horizontal wells.}
-        \resumeItem{Implemented a coupled pressure-strain numerical model using MOOSE to simulate LF-DAS responses under various cementing conditions.}
-        \resumeItem{Conducted history matching of field LF-DAS data, demonstrating the method's effectiveness in identifying cement channeling.}
+        \resumeItem{Developed a low-frequency DAS (LF-DAS) data processing workflow and field deployment strategy to monitor cement quality in horizontal wells.}
+        \resumeItem{Implemented a coupled pressure-strain numerical model using MOOSE to simulate LF-DAS forward responses under various cementing conditions.}
+        \resumeItem{Conducted iterative history matching of field LF-DAS data to validate methodology effectiveness in identifying cement channeling.}
       \resumeItemListEnd
 
-      \resumeItem{\textbf{EGS Data Interpretation, Fervo Energy}}
+    \resumeItem{\textbf{Permeability Inversion from DAS Data (ExxonMobil Collaboration)}}
       \resumeItemListStart
-        \resumeItem{Collaborating with Rice University and Fervo Energy to interpret multiple types of geophysical data (e.g., DAS, sonic logs).}
-        \resumeItem{Developing a novel interpretation tool for LF-DAS data to analyze pressure-strain coupling for fracture characterization.}
+        \resumeItem{Formulated and solved an inverse problem for low-frequency DAS data to quantify in-situ permeability; developed physics-based forward modeling and optimization algorithms for inversion.}
+        \resumeItem{Advanced inverse problem solving through iterative history matching of field datasets, demonstrating methodology effectiveness for subsurface characterization.}
+        \resumeItem{Integrated analytical and physics-based approaches with optimization techniques to validate inversion results against well logs and operational data.}
       \resumeItemListEnd
 
+    \resumeItem{\textbf{Geothermal Energy Systems Data Interpretation (Fervo Energy Collaboration)}}
+      \resumeItemListStart
+        \resumeItem{Collaborating with Rice University and Fervo Energy to develop inversion-driven interpretation tools for multiple geophysical data types (e.g., DAS, sonic, seismic).}
+        \resumeItem{Designing novel machine learning-enhanced inversion workflows for LF-DAS data to analyze pressure-strain coupling and fracture characterization.}
+      \resumeItemListEnd
   \resumeItemListEnd
 
 \resumeSubheading
   {Graduate Research Intern}{Idaho Springs, Colorado}
   {Reservoir Characterization Project, Colorado School of Mines}{May 2025 -- Aug 2025}
   \resumeItemListStart
-    \resumeItem{Conducted a DOE project on monitoring high-voltage induced rock fracture using LF-DAS.}
-    \resumeItem{Designed and successfully deployed a novel U-shaped DAS fiber optic cable in two monitoring wells, while also installing separate DTS and DSS fibers for both wells.}
+    \resumeItem{Conducted DOE-funded research on monitoring induced fracture propagation using low-frequency DAS; developed novel data acquisition and processing strategies.}
+    \resumeItem{Designed and deployed a novel U-shaped fiber-optic cable in monitoring wells with co-located DTS and DSS sensing fibers, advancing field deployment methodologies.}
+    \resumeItem{Analyzed multi-channel DAS datasets to extract fracture signatures and validate subsurface imaging workflows.}
   \resumeItemListEnd
 
 \resumeSubheading
   {Undergraduate Research Intern}{Golden, Colorado}
   {Reservoir Characterization Project, Colorado School of Mines}{July 2022 -- September 2022}
   \resumeItemListStart
-    \resumeItem{Contributed to the development of data processing workflows for LF-DAS data collected in Lake Hattie, Wyoming.}
-    \resumeItem{Implemented a velocity scanning algorithm for improved data interpretation.}
+    \resumeItem{Developed data processing and inversion workflows for low-frequency DAS data collected in Lake Hattie, Wyoming; implemented velocity scanning and optimization algorithms for enhanced data interpretation.}
+    \resumeItem{Contributed to research workflow development for DAS-based subsurface imaging and applied signal processing techniques to improve data quality.}
   \resumeItemListEnd
 
 \resumeSubheading
   {Undergraduate Research Assistant}{Hangzhou, China}
   {School of Geosciences, Zhejiang University}{Sept 2021 -- June 2023}
   \resumeItemListStart
-    \resumeItem{Conducted research on joint inversion methods for seismic and electromagnetic data.}
-    \resumeItem{Developed a joint inversion algorithm in \textit{C++} and validated it against well log data using field datasets.}
+    \resumeItem{Developed advanced joint inversion algorithms in \textit{C++} to solve coupled seismic and electromagnetic inverse problems for subsurface characterization.}
+    \resumeItem{Implemented optimization techniques including Gauss-Newton iteration and regularization methods to improve inversion stability and convergence.}
+    \resumeItem{Validated inversion algorithms on field datasets and well log data, demonstrating practical effectiveness in resolving subsurface geological structures.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -179,7 +193,7 @@
 %----------- PUBLICATIONS -----------
 \section{Publications}
 \resumeSubHeadingListStart
-    \resumeItem{\textbf{Jin, S.}, and Jin, G. (2026). Low-Frequency DAS for Cement Quality Monitoring in Horizontal Wells. \textit{SPE Journal} (finished, submission target Q4 2026); abstract will be submitted to URTeC 2026.}
+    \resumeItem{\textbf{Jin, S.}, and Jin, G. (2026). Low-Frequency DAS for Cement Quality Monitoring in Horizontal Wells: Seismic Inversion and Optimization Perspectives. \textit{SPE Journal} (in review); abstract submitted to URTeC 2026.}
     \resumeItem{Mao, F., Yang, B., \& \textbf{Jin, S.} (2025). Recovering missing regions of earth magnetic anomaly grid data (EMAG2) using RePaint based on diffusion model. \textit{Big Data and Earth System}, 1(1), 100004.}
 \resumeSubHeadingListEnd
 
